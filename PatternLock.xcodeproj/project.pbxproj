@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		778FAEE21BAAA4E3001920C1 /* PatternManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 778FAEE11BAAA4E3001920C1 /* PatternManager.m */; };
+		77D5D0071BAA83FD0051F58F /* LandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D5D0061BAA83FD0051F58F /* LandingViewController.m */; };
+		77D5DD6A1BA92CED0027497B /* DrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D5DD691BA92CED0027497B /* DrawingView.m */; };
 		77D710841BA888430071578E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D710831BA888430071578E /* main.m */; };
 		77D710871BA888430071578E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D710861BA888430071578E /* AppDelegate.m */; };
-		77D7108A1BA888430071578E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D710891BA888430071578E /* ViewController.m */; };
+		77D7108A1BA888430071578E /* PatternViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D710891BA888430071578E /* PatternViewController.m */; };
 		77D7108D1BA888430071578E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77D7108B1BA888430071578E /* Main.storyboard */; };
 		77D7108F1BA888430071578E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77D7108E1BA888430071578E /* Images.xcassets */; };
 		77D710921BA888430071578E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77D710901BA888430071578E /* LaunchScreen.xib */; };
 		77D7109E1BA888430071578E /* PatternLockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D7109D1BA888430071578E /* PatternLockTests.m */; };
+		77D710A91BA8885D0071578E /* PatternView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D710A81BA8885D0071578E /* PatternView.m */; };
+		77D710AC1BA8886B0071578E /* NodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D710AB1BA8886B0071578E /* NodeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +32,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		778FAEE01BAAA4E3001920C1 /* PatternManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatternManager.h; sourceTree = "<group>"; };
+		778FAEE11BAAA4E3001920C1 /* PatternManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatternManager.m; sourceTree = "<group>"; };
+		77D5D0051BAA83FD0051F58F /* LandingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingViewController.h; sourceTree = "<group>"; };
+		77D5D0061BAA83FD0051F58F /* LandingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingViewController.m; sourceTree = "<group>"; };
+		77D5DD681BA92CED0027497B /* DrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingView.h; sourceTree = "<group>"; };
+		77D5DD691BA92CED0027497B /* DrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawingView.m; sourceTree = "<group>"; };
 		77D7107E1BA888430071578E /* PatternLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatternLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77D710821BA888430071578E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77D710831BA888430071578E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		77D710851BA888430071578E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77D710861BA888430071578E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		77D710881BA888430071578E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		77D710891BA888430071578E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		77D710881BA888430071578E /* PatternViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PatternViewController.h; sourceTree = "<group>"; };
+		77D710891BA888430071578E /* PatternViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PatternViewController.m; sourceTree = "<group>"; };
 		77D7108C1BA888430071578E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		77D7108E1BA888430071578E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		77D710911BA888430071578E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		77D710971BA888430071578E /* PatternLockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PatternLockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77D7109C1BA888430071578E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77D7109D1BA888430071578E /* PatternLockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PatternLockTests.m; sourceTree = "<group>"; };
+		77D710A71BA8885D0071578E /* PatternView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatternView.h; sourceTree = "<group>"; };
+		77D710A81BA8885D0071578E /* PatternView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatternView.m; sourceTree = "<group>"; };
+		77D710AA1BA8886B0071578E /* NodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeView.h; sourceTree = "<group>"; };
+		77D710AB1BA8886B0071578E /* NodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +98,22 @@
 			children = (
 				77D710851BA888430071578E /* AppDelegate.h */,
 				77D710861BA888430071578E /* AppDelegate.m */,
-				77D710881BA888430071578E /* ViewController.h */,
-				77D710891BA888430071578E /* ViewController.m */,
+				77D710881BA888430071578E /* PatternViewController.h */,
+				77D710891BA888430071578E /* PatternViewController.m */,
 				77D7108B1BA888430071578E /* Main.storyboard */,
 				77D7108E1BA888430071578E /* Images.xcassets */,
 				77D710901BA888430071578E /* LaunchScreen.xib */,
 				77D710811BA888430071578E /* Supporting Files */,
+				77D710A71BA8885D0071578E /* PatternView.h */,
+				77D710A81BA8885D0071578E /* PatternView.m */,
+				77D710AA1BA8886B0071578E /* NodeView.h */,
+				77D710AB1BA8886B0071578E /* NodeView.m */,
+				77D5DD681BA92CED0027497B /* DrawingView.h */,
+				77D5DD691BA92CED0027497B /* DrawingView.m */,
+				77D5D0051BAA83FD0051F58F /* LandingViewController.h */,
+				77D5D0061BAA83FD0051F58F /* LandingViewController.m */,
+				778FAEE01BAAA4E3001920C1 /* PatternManager.h */,
+				778FAEE11BAAA4E3001920C1 /* PatternManager.m */,
 			);
 			path = PatternLock;
 			sourceTree = "<group>";
@@ -219,9 +244,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77D7108A1BA888430071578E /* ViewController.m in Sources */,
+				77D7108A1BA888430071578E /* PatternViewController.m in Sources */,
+				77D5D0071BAA83FD0051F58F /* LandingViewController.m in Sources */,
+				77D710AC1BA8886B0071578E /* NodeView.m in Sources */,
+				77D710A91BA8885D0071578E /* PatternView.m in Sources */,
 				77D710871BA888430071578E /* AppDelegate.m in Sources */,
 				77D710841BA888430071578E /* main.m in Sources */,
+				778FAEE21BAAA4E3001920C1 /* PatternManager.m in Sources */,
+				77D5DD6A1BA92CED0027497B /* DrawingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +310,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sarvesh Suryavanshi (KXLWN57G3U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sarvesh Suryavanshi (KXLWN57G3U)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -299,7 +330,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -323,7 +354,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sarvesh Suryavanshi (KXLWN57G3U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sarvesh Suryavanshi (KXLWN57G3U)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -336,7 +368,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -347,6 +379,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = PatternLock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +390,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = PatternLock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +450,7 @@
 				77D710A31BA888430071578E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77D710A41BA888430071578E /* Build configuration list for PBXNativeTarget "PatternLockTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +459,7 @@
 				77D710A61BA888430071578E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

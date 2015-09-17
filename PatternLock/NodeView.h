@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  NodeView.h
 //  PatternLock
 //
 //  Created by Jubin Jacob on 15/09/15.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface NodeView : UIView
+-(instancetype)initWithWidth:(CGFloat)width;
+-(void)markInvalid;
+-(void)reset;
+-(void)animateNode;
 
 @end
-

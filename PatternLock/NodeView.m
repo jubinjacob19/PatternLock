@@ -34,8 +34,10 @@
 }
 
 -(void)animateNode {
-    [self setTransform:CGAffineTransformMakeScale(1.5, 1.5)];
-    [self performSelector:@selector(removeScaleEffect) withObject:self afterDelay:0.5];
+    if([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) {
+        [self setTransform:CGAffineTransformMakeScale(1.5, 1.5)];
+        [self performSelector:@selector(removeScaleEffect) withObject:self afterDelay:0.5];
+    }
 }
 
 -(void)removeScaleEffect {

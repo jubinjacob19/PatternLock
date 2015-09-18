@@ -11,8 +11,8 @@
 #import "DrawingView.h"
 
 static CGFloat const nodeSide = 20.0f;
-static CGFloat const permittedMinOffset = 10.0f;
-static CGFloat const permittedMaxOffset = 20.0f;
+static CGFloat const permittedMinOffset = 15.0f;
+static CGFloat const permittedMaxOffset = 24.0f;
 
 typedef NS_ENUM(NSUInteger, ToleranceLevel) {
     ToleranceLevelLow,
@@ -104,13 +104,13 @@ typedef NS_ENUM(NSUInteger, ToleranceLevel) {
     self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self];
     self.pushBehaviour1 = [[UIPushBehavior alloc] initWithItems:@[self.node1,self.node2,self.node3] mode:UIPushBehaviorModeContinuous];
     [self.pushBehaviour1 setAngle:-M_PI_2];
-    [self.pushBehaviour1 setMagnitude:2.0];
+    [self.pushBehaviour1 setMagnitude:3.0];
     self.pushBehaviour2 = [[UIPushBehavior alloc] initWithItems:@[self.node4,self.node5,self.node6] mode:UIPushBehaviorModeContinuous];
     [self.pushBehaviour2 setAngle:-M_PI_2];
-    [self.pushBehaviour2 setMagnitude:1.3];
+    [self.pushBehaviour2 setMagnitude:2.3];
     self.pushBehaviour3 = [[UIPushBehavior alloc] initWithItems:@[self.node7,self.node8,self.node9] mode:UIPushBehaviorModeContinuous];
     [self.pushBehaviour3 setAngle:-M_PI_2];
-    [self.pushBehaviour3 setMagnitude:0.3];
+    [self.pushBehaviour3 setMagnitude:1.0];
     [self.animator addBehavior:self.pushBehaviour1];
     [self.animator addBehavior:self.pushBehaviour2];
     [self.animator addBehavior:self.pushBehaviour3];

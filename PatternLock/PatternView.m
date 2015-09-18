@@ -309,9 +309,11 @@ typedef NS_ENUM(NSUInteger, ToleranceLevel) {
     CGPoint point2  = [[self.pointsArray objectAtIndex:self.pointsArray.count-2] CGPointValue];
     __block NSUInteger intermediateNodeIndex = NSNotFound;
     [self.nodesArray enumerateObjectsUsingBlock:^(NodeView *nodeView, NSUInteger idx, BOOL *stop) {
-        if([Utils point:nodeView.center liesInJoinOfPoint1:point1 point2:point2]) {
-            intermediateNodeIndex = idx;
-            *stop = YES;
+        if(![self.currentPattern containsObject:@(idx)]) {
+            if([Utils point:nodeView.center liesInJoinOfPoint1:point1 point2:point2]) {
+                intermediateNodeIndex = idx;
+                *stop = YES;
+            }
         }
     }];
     if(intermediateNodeIndex != NSNotFound) {

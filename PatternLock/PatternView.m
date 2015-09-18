@@ -11,8 +11,8 @@
 #import "DrawingView.h"
 
 static CGFloat const nodeSide = 20.0f;
-static CGFloat const permittedMinOffset = 15.0f;
-static CGFloat const permittedMaxOffset = 24.0f;
+static CGFloat const permittedMinOffset = 20.0f;
+static CGFloat const permittedMaxOffset = 30.0f;
 
 typedef NS_ENUM(NSUInteger, ToleranceLevel) {
     ToleranceLevelLow,

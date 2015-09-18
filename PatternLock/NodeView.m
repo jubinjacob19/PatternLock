@@ -43,7 +43,7 @@
 }
 
 -(void)animateNode {
-    self.maskInset = 2.5;
+    self.maskInset = 0.0;
     [self setNeedsDisplay];
     [self performSelector:@selector(removeScaleEffect) withObject:self afterDelay:0.5];
 

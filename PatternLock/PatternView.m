@@ -376,7 +376,7 @@ typedef NS_ENUM(NSUInteger, ToleranceLevel) {
 -(BOOL)shouldAddPoint:(CGPoint)newPoint {
     
     CGPoint previousPoint = [[self.pointsArray lastObject] CGPointValue];
-    return (fabsf(newPoint.x - previousPoint.x) > permittedMinOffset || fabsf(newPoint.y - previousPoint.y) > permittedMinOffset);
+    return (fabs(newPoint.x - previousPoint.x) > permittedMinOffset || fabs(newPoint.y - previousPoint.y) > permittedMinOffset);
     
 }
 

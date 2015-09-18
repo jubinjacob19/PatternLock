@@ -15,7 +15,6 @@
     if(CGPointEqualToPoint(intermediatePoint, point1) || CGPointEqualToPoint(intermediatePoint, point2)) {
         return NO;
     }
-
     CGFloat minx = MIN(point1.x,point2.x);
     CGFloat maxx = MAX(point1.x,point2.x);
     CGFloat miny = MIN(point1.y,point2.y);

@@ -10,7 +10,7 @@
 #import "NodeView.h"
 #import "DrawingView.h"
 
-static CGFloat const nodeSide = 10.0f;
+static CGFloat const nodeSide = 20.0f;
 static CGFloat const permittedMinOffset = 10.0f;
 static CGFloat const permittedMaxOffset = 20.0f;
 

@@ -300,7 +300,7 @@ typedef NS_ENUM(NSUInteger, PatternState) {
 
 -(void)showInvalidPatternAlert {
     
-    [self.infoLabel setText:@"Connect atleast three dots"];
+    [self.infoLabel setText:@"Connect atleast four dots"];
 }
 
 -(void)updateUIForPatternEntry {

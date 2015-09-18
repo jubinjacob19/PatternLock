@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		778FAEE21BAAA4E3001920C1 /* PatternManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 778FAEE11BAAA4E3001920C1 /* PatternManager.m */; };
+		77D58A001BABFEEB006E3988 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D589FF1BABFEEB006E3988 /* Utils.m */; };
 		77D5D0071BAA83FD0051F58F /* LandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D5D0061BAA83FD0051F58F /* LandingViewController.m */; };
 		77D5DD6A1BA92CED0027497B /* DrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D5DD691BA92CED0027497B /* DrawingView.m */; };
 		77D710841BA888430071578E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D710831BA888430071578E /* main.m */; };
@@ -34,6 +35,8 @@
 /* Begin PBXFileReference section */
 		778FAEE01BAAA4E3001920C1 /* PatternManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatternManager.h; sourceTree = "<group>"; };
 		778FAEE11BAAA4E3001920C1 /* PatternManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatternManager.m; sourceTree = "<group>"; };
+		77D589FE1BABFEEB006E3988 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		77D589FF1BABFEEB006E3988 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		77D5D0051BAA83FD0051F58F /* LandingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingViewController.h; sourceTree = "<group>"; };
 		77D5D0061BAA83FD0051F58F /* LandingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingViewController.m; sourceTree = "<group>"; };
 		77D5DD681BA92CED0027497B /* DrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawingView.h; sourceTree = "<group>"; };
@@ -75,6 +78,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77D589FD1BABFED4006E3988 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				77D589FE1BABFEEB006E3988 /* Utils.h */,
+				77D589FF1BABFEEB006E3988 /* Utils.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		77D710751BA888430071578E = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +108,7 @@
 		77D710801BA888430071578E /* PatternLock */ = {
 			isa = PBXGroup;
 			children = (
+				77D589FD1BABFED4006E3988 /* Utilities */,
 				77D710851BA888430071578E /* AppDelegate.h */,
 				77D710861BA888430071578E /* AppDelegate.m */,
 				77D710881BA888430071578E /* PatternViewController.h */,
@@ -244,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77D58A001BABFEEB006E3988 /* Utils.m in Sources */,
 				77D7108A1BA888430071578E /* PatternViewController.m in Sources */,
 				77D5D0071BAA83FD0051F58F /* LandingViewController.m in Sources */,
 				77D710AC1BA8886B0071578E /* NodeView.m in Sources */,

@@ -9,6 +9,7 @@
 #import "PatternView.h"
 #import "NodeView.h"
 #import "DrawingView.h"
+#import "Utils.h"
 
 static CGFloat const nodeSide = 20.0f;
 static CGFloat const permittedMinOffset = 20.0f;
@@ -270,6 +271,8 @@ typedef NS_ENUM(NSUInteger, ToleranceLevel) {
                         [self.currentPattern addObject:@(newNodeIndex)];
                         [self.pointsArray replaceObjectAtIndex:lastIndex withObject:newNodeCentre];
                         [self animateAddedNode];
+                        [self checkForIntermediatePoint];
+                        
                     }
                     else
                     {
@@ -299,6 +302,28 @@ typedef NS_ENUM(NSUInteger, ToleranceLevel) {
     }
     [self.drawingView updatePointsWithArray:self.pointsArray];
     [self.drawingView setNeedsDisplay];
+}
+
+-(void)checkForIntermediatePoint {
+    CGPoint point1  = [[self.pointsArray lastObject] CGPointValue];
+    CGPoint point2  = [[self.pointsArray objectAtIndex:self.pointsArray.count-2] CGPointValue];
+    __block NSUInteger intermediateNodeIndex = NSNotFound;
+    [self.nodesArray enumerateObjectsUsingBlock:^(NodeView *nodeView, NSUInteger idx, BOOL *stop) {
+        if([Utils point:nodeView.center liesInJoinOfPoint1:point1 point2:point2]) {
+            intermediateNodeIndex = idx;
+            *stop = YES;
+        }
+    }];
+    if(intermediateNodeIndex != NSNotFound) {
+        [self addIntermediateNodeFromIndex:intermediateNodeIndex];
+    }
+}
+
+-(void)addIntermediateNodeFromIndex:(NSUInteger)index {
+    [self.currentPattern insertObject:@(index) atIndex:self.currentPattern.count-1];
+    NodeView *node = [self.nodesArray objectAtIndex:index];
+    [self.pointsArray insertObject:[NSValue valueWithCGPoint:node.center] atIndex:self.pointsArray.count-1];
+    [self animateNodeAtIndex:index];
 }
 
 
@@ -369,6 +394,9 @@ typedef NS_ENUM(NSUInteger, ToleranceLevel) {
 
 -(void)animateAddedNode {
     [[self.nodesArray objectAtIndex:[[self.currentPattern lastObject] integerValue]] animateNode];
+}
+-(void)animateNodeAtIndex:(NSUInteger)index {
+    [[self.nodesArray objectAtIndex:index] animateNode];
 }
 
 -(void)updateViewForCorrectPatternAnimates:(BOOL)shouldAnimate {

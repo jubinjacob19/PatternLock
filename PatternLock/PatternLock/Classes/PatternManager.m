@@ -2,7 +2,7 @@
 //  PatternManager.m
 //  PatternLock
 //
-//  Created by curatech on 10/19/19.
+//  Created by jubinjacob on 10/19/19.
 //
 
 #import "PatternManager.h"

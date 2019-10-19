@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - PatternLock (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - PatternLock (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  PatternLock:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  PatternLock: 5a21bc946a8363bc56826bc9ccf368cd47f5ab9b
+
+PODFILE CHECKSUM: bcceb514f69969d6a743e3ae665989e012bca3bb
+
+COCOAPODS: 1.6.2

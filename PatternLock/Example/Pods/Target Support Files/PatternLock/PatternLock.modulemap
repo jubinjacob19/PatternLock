@@ -1,0 +1,6 @@
+framework module PatternLock {
+  umbrella header "PatternLock-umbrella.h"
+
+  export *
+  module * { export * }
+}

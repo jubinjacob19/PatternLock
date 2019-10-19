@@ -1,0 +1,22 @@
+{
+  "name": "PatternLock",
+  "version": "0.1.0",
+  "summary": "A short description of PatternLock.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/jubinjacob19/PatternLock",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "jubinjacob19": "jubin@cura.tech"
+  },
+  "source": {
+    "git": "https://github.com/jubinjacob19/PatternLock.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "PatternLock/Classes/**/*"
+}

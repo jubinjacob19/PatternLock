@@ -1,0 +1,6 @@
+framework module Pods_PatternLock_Tests {
+  umbrella header "Pods-PatternLock_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
